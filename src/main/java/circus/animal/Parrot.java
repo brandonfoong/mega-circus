@@ -3,7 +3,7 @@ package circus.animal;
 public class Parrot extends Bird {
     @Override
     public String speak() {
-        return "Polly wants a cracker";
+        return name + " wants a cracker";
     }
 
     @Override
@@ -13,6 +13,10 @@ public class Parrot extends Bird {
 
     @Override
     public String toString() {
-        return "I'm a parrot";
+        return "My name is " + name + ". I'm a parrot";
+    }
+
+    public Parrot(String name) {
+        this.name = name;
     }
 }
